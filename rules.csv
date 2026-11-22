@@ -104,7 +104,7 @@ FAIR-9,active,"Deal fairly when you buy, sell, lend or hire: give honest measure
 FAIR-10,active,"Pay people fairly and on time for their work, with equal pay for equal work."
 FAIR-11,active,"Do your fair share of shared work and costs, and don't free-ride on the efforts of others."
 FAIR-12,active,"When you share something out among people, agree openly on a fair basis, such as equal shares, need or effort, and apply it to everyone in the same way."
-GAME-1,active,"Tell players before they buy or download a game that it sells paid random items, such as loot boxes, card packs or gacha pulls, and show the odds of each item or category before every purchase, in plain words, next to the buy button."
+GAME-1,active,"Tell players before they buy or download a game that it sells paid random items, such as loot boxes, card packs or gacha pulls, and show the odds of each item or category before every purchase, in plain words, close to the point of purchase."
 GAME-2,active,"Show the real-money price of everything that players buy with virtual currency, and sell currency in amounts that match what items cost, so that players aren't left with leftovers that push them to buy more."
 GAME-3,active,"Don't let children buy loot boxes or other paid random items without a parent's or carer's consent, and never urge children to buy or to ask their parents to."
 GAME-4,active,"Ask for clear confirmation before every real-money purchase, give refunds when a child or someone else spent without permission, and never lock the accounts of players who dispute a charge."
@@ -133,7 +133,7 @@ HON-2,active,"Don't deceive by other means either: misleading but literally true
 HON-3,active,"Distrust your own case for a ""helpful"" lie: you have a stake in believing that it will do more good than harm, and you can't foresee its consequences."
 HON-4,active,Be honest with yourself: notice when you avoid or explain away evidence that would cost you something to accept.
 HON-5,active,Keep your promises and agreements.
-HON-6,active,"Don't make a promise you don't intend to keep, or one you have good reason to think you can't keep."
+HON-6,active,Don't make a promise you don't intend to keep.
 HON-7,active,"If you can't keep a promise, tell the person as early as you can, explain why, and do what you can to make up for it."
 HON-8,active,"Be trustworthy: be reliable in what you say you will do, especially where people depend on you and can't check."
 HON-9,active,"Give credit for other people's work and ideas, and never present them as your own."
@@ -219,7 +219,7 @@ REL-7,active,"Thank the people who help you, and look for ways to return or pass
 REL-8,active,"Be willing to forgive, but don't confuse forgiving with excusing the wrong, or with going back to someone who may harm you again."
 REL-9,active,"Be a considerate neighbour: treat the people who live around you with respect, and look out for those who are old, ill or alone."
 REL-10,active,"Contribute to the common good of the communities you belong to, for example by volunteering your time and skills."
-REL-11,active,"Take part in the public life of your community: stay informed, vote where you can, and take part in decisions that affect the people around you."
+REL-11,active,"Where you can, stay informed about and take part in the decisions that affect your community and the people around you."
 RES-1,active,"Get each participant's free and informed consent before they take part, and respect their right to refuse or to withdraw at any time without penalty."
 RES-2,active,"Have the research approved by an independent research ethics committee before it starts, and keep the committee informed until it ends."
 RES-3,active,"Do research only when its expected value outweighs the risks and burdens to participants, keep those risks as low as possible, and stop or change the study if the balance turns."
@@ -236,7 +236,7 @@ RESP-1,active,"Treat every person as someone with equal dignity, never merely as
 RESP-2,active,"Respect people's right to make their own decisions about their own lives, even decisions you think unwise."
 RESP-3,active,"When someone finds it hard to decide, help them decide for themselves; if you must decide for them, follow their wishes, values and preferences as far as you can."
 RESP-4,active,"Listen to children, and give their views a weight that grows with their age and maturity."
-RESP-5,active,"Get a person's consent before you do something to their body, their belongings or their private life, and respect a refusal."
+RESP-5,active,"Get a person's consent before you do something to their body or their private life, and respect a refusal."
 RESP-6,active,"Make sure consent is real: the person understands what they are agreeing to, agrees freely without pressure or threats, and is able to decide."
 RESP-7,active,"Treat consent as specific and revocable: agreeing to one thing is not agreeing to another, agreeing once is not agreeing every time, and anyone can change their mind at any point."
 RESP-8,active,"Respect other people's privacy: don't read their messages, search their belongings, track them or record them in private without their agreement."

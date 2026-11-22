@@ -78,6 +78,16 @@ Rules exist only where there is broad agreement ([ADR-0006](docs/decisions/0006-
 
 Scores are judgements, so they are checked with blind second opinions: someone scores a sample of rules and sources against this file without seeing the existing scores, and any band where the two disagree systematically is re-checked. The results of each round are recorded here.
 
+The first round, on 2026-11-22, covered the repository as first published: an independent reviewer, who hadn't seen the scores, scored a sample of 46 rules (stratified by level) and 45 sources, and checked 30 randomly chosen rules against the first source each cites.
+
+- 89% of rule scores (24 of 46 exactly) and 89% of source scores (29 of 45 exactly) were within one point.
+- Rules ran about half a point high. Rules scored 8 came back lower in 11 of 22 cases and never higher, rules scored 9 came back lower in 5 of 10, and rules scored 7 came back lower in 5 of 8; the 10s and the few rules scored 1–5 matched. Every rule scored 9 or 8 (182 rules) was then re-checked against the table above. Twelve 9s were lowered to 8, mostly rules that codes and laws require only in some settings, such as for high-risk AI systems, or whose harm is mainly financial and recoverable, and 39 8s were lowered to 7, mostly reasoning aids and self-checks, rules whose harm is mainly financial and recoverable, and rules whose consensus is strong only for children or in one jurisdiction. Rules that state duties found across traditions and in law kept their scores, such as keeping promises (`HON-5`) and equal pay for work of equal value (`WORK-3`). The 7s were not re-checked in this round, because their sample was small; they are the first band to re-check in the next one.
+- Five rules were two points apart and were re-scored. One rule that presented voting as a duty everyone agrees on was reworded (`REL-11`), because whether there is a duty to vote is debated.
+- Sources ran 0.2 points high. Archived pages, a closed consultation and an early-stage press release were lowered, and twelve links to a single verse that had been scored 8 were lowered to 7.
+- None of the 30 checked rules was unsupported: 18 were fully supported by the first source they cite, and 12 only partly. Six of those 12 were fully covered by the other sources they cite; the other six were narrowed to what the sources say or given a further source.
+
+This round adds three rules of thumb. A reasoning aid or self-check, such as a test to run before you decide, usually scores at most 7, because the harm of skipping it is indirect. A rule whose consensus is strong only for children scores at most 7 as a rule for everyone. A link to a single verse or passage of a text scores at most 7, like any link to one section.
+
 Repeat the exercise after large additions: sample entries across files and score bands, have someone score them blind, and re-check any band where the difference is systematic.
 
 ## Changing a score

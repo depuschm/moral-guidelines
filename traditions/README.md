@@ -8,7 +8,7 @@ Each page sets out a tradition's core moral teachings, cites the tradition's own
 
 ## Adopted references
 
-- `8` [Towards a Global Ethic: An Initial Declaration](https://www.weltethos.org/wp-content/uploads/2023/08/Global-Ethic-Declaration_EN.pdf) (Parliament of the World's Religions, 1993, with a fifth commitment added later): a statement of the moral ground that leaders of many religions and spiritual traditions found they share, published by the Foundation for a Global Ethic.
+- `7` [Towards a Global Ethic: An Initial Declaration](https://www.weltethos.org/wp-content/uploads/2023/08/Global-Ethic-Declaration_EN.pdf) (Parliament of the World's Religions, 1993, with a fifth commitment added later): a statement of the moral ground that leaders of many religions and spiritual traditions found they share, published by the Foundation for a Global Ethic.
 - `7` [The Golden Rule](https://iep.utm.edu/goldrule/) (Internet Encyclopedia of Philosophy): the rule's forms in different traditions, its "silver rule" negative form, how it has been interpreted and criticised.
 - `7` [Religion and Morality in Western Philosophy](https://plato.stanford.edu/entries/religion-morality/) (Stanford Encyclopedia of Philosophy): how Jewish, Christian and Islamic thought, and Western philosophy after them, have understood the relation between God and morality.
 

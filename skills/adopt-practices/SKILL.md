@@ -47,7 +47,7 @@ The guidelines root is `${CLAUDE_PLUGIN_ROOT}`. If that placeholder wasn't repla
 
 | Practice | Where | Supports | Why this one |
 | --- | --- | --- | --- |
-| <Practice> | `.github/pull_request_template.md` | `DESIGN-1` (9), `HON-2` (8) | <reason> |
+| <Practice> | `.github/pull_request_template.md` | `DESIGN-1` (8), `HON-2` (8) | <reason> |
 
 ### Not adopted
 - <Practice>: <why not now, for example covered by an existing process, or only supports low-scored rules>

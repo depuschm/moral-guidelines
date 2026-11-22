@@ -71,7 +71,7 @@ This file is generated from [sources.csv](sources.csv) by `python3 scripts/rank.
 
 ## Recommended (6–8)
 
-825 sources.
+828 sources.
 
 | Score | Source | Used in | Verified |
 | --- | --- | --- | --- |
@@ -120,7 +120,6 @@ This file is generated from [sources.csv](sources.csv) by `python3 scripts/rank.
 | 8 | [OECD, Convention on Combating Bribery of Foreign Public Officials in International Business Transactions](https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0293) | [specific/business](specific/business/README.md) | 2026-11-22 |
 | 8 | [OECD, Dark commercial patterns (Digital Economy Papers No. 336)](https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/10/dark-commercial-patterns_9f6169cd/44f5e846-en.pdf) | [specific/design](specific/design/README.md) | 2026-11-22 |
 | 8 | [OECD, Recommendation of the Council on the OECD Due Diligence Guidance for Responsible Business Conduct](https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0443) | [specific/business](specific/business/README.md) | 2026-11-22 |
-| 8 | [Parliament of the World's Religions, Towards a Global Ethic: An Initial Declaration](https://www.weltethos.org/wp-content/uploads/2023/08/Global-Ethic-Declaration_EN.pdf) | [general/animals](general/animals.md), [general/environment](general/environment.md), [general/fairness](general/fairness.md), [general/harm-and-care](general/harm-and-care.md), [general/human-rights](general/human-rights.md), [general/moral-theories](general/moral-theories.md), [general/relationships](general/relationships.md), [traditions](traditions/README.md) | 2026-11-22 |
 | 8 | [PEGI, PEGI expands age rating criteria with interactive risk categories](https://pegi.info/news/pegi-expands-age-rating-criteria-interactive-risk-categories) | [specific/games](specific/games/README.md) | 2026-11-22 |
 | 8 | [PubMed Central, Mellor and others, The 2020 Five Domains Model](https://pmc.ncbi.nlm.nih.gov/articles/PMC7602120/) | [general/animals](general/animals.md) | 2026-11-22 |
 | 8 | [Quran.com, Al-Baqarah 2:177](https://quran.com/al-baqarah/177) | [general/harm-and-care](general/harm-and-care.md) | 2026-11-22 |
@@ -135,9 +134,11 @@ This file is generated from [sources.csv](sources.csv) by `python3 scripts/rank.
 | 8 | [Sefaria, Exodus 20:13](https://www.sefaria.org/Exodus.20.13) | [general/harm-and-care](general/harm-and-care.md) | 2026-11-22 |
 | 8 | [Sefaria, Exodus 23:8](https://www.sefaria.org/Exodus.23.8) | [general/fairness](general/fairness.md) | 2026-11-22 |
 | 8 | [Sefaria, Leviticus 19:15](https://www.sefaria.org/Leviticus.19.15) | [general/fairness](general/fairness.md) | 2026-11-22 |
+| 8 | [Sefaria, Leviticus 19:35-36](https://www.sefaria.org/Leviticus.19.35-36) | [general/fairness](general/fairness.md), [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 8 | [Sefaria, Mishneh Torah](https://www.sefaria.org/texts/Halakhah/Mishneh%20Torah) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 8 | [Sefaria, Mishneh Torah, Gifts to the Poor 10:7](https://www.sefaria.org/Mishneh_Torah,_Gifts_to_the_Poor.10.7) | [general/harm-and-care](general/harm-and-care.md) | 2026-11-22 |
 | 8 | [Sefaria, Pirkei Avot](https://www.sefaria.org/Pirkei_Avot) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
+| 8 | [Sefaria, Shabbat 31a:6](https://www.sefaria.org/Shabbat.31a.6) | [general/harm-and-care](general/harm-and-care.md), [traditions](traditions/README.md), [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 8 | [SriGranth, Sri Guru Granth Sahib (trans. Sant Singh Khalsa)](https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1) | [traditions/sikhism](traditions/sikhism.md) | 2026-11-22 |
 | 8 | [St Andrews Encyclopaedia of Theology, Christian Ethics](https://www.saet.ac.uk/Christianity/ChristianEthics) | [traditions/christianity](traditions/christianity.md) | 2026-11-22 |
 | 8 | [St Andrews Encyclopaedia of Theology, Ethics in Islam](https://www.saet.ac.uk/Islam/Ethics) | [traditions/islam](traditions/islam.md) | 2026-11-22 |
@@ -438,6 +439,7 @@ This file is generated from [sources.csv](sources.csv) by `python3 scripts/rank.
 | 7 | [Indiana University ScholarWorks, Robert Eno, The Analects of Confucius: A Teaching Translation](https://scholarworks.iu.edu/dspace/items/12df6d92-4ac2-47d4-8c20-2f8018f2555d) | [traditions/confucianism](traditions/confucianism.md) | 2026-11-22 |
 | 7 | [International AI Safety Report 2026](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) | [specific/ai](specific/ai/README.md) | 2026-11-22 |
 | 7 | [International Chamber of Commerce, ICC Framework for Responsible Environmental Marketing Communications (2025)](https://iccwbo.org/news-publications/business-solutions/icc-framework-for-responsible-environmental-marketing-communications-2/) | [specific/marketing](specific/marketing/README.md) | 2026-11-22 |
+| 7 | [International Criminal Court, Rome Statute of the International Criminal Court, Article 28](https://www.icc-cpi.int/sites/default/files/2024-05/Rome-Statute-eng.pdf#page=29) | [general/responsibility](general/responsibility.md) | 2026-11-22 |
 | 7 | [International Institute of Islamic Thought, Kamali, Maqasid al-Shari'ah Made Simple](https://iiit.org/wp-content/uploads/2024/02/MaqasidAl-ShariahMadeSimple-UPDATED-RED.pdf) | [traditions/islam](traditions/islam.md) | 2026-11-22 |
 | 7 | [International Labour Organization, General principles and operational guidelines for fair recruitment](https://www.ilo.org/publications/general-principles-and-operational-guidelines-fair-recruitment-and) | [specific/workplace](specific/workplace/README.md) | 2026-11-22 |
 | 7 | [International Labour Organization, Guidelines on occupational safety and health management systems (ILO-OSH 2001)](https://www.ilo.org/publications/guidelines-occupational-safety-and-health-management-systems-ilo-osh-2001) | [specific/workplace](specific/workplace/README.md) | 2026-11-22 |
@@ -498,6 +500,7 @@ This file is generated from [sources.csv](sources.csv) by `python3 scripts/rank.
 | 7 | [Open Data Institute, The Data Ethics Canvas](https://theodi.org/insights/tools/the-data-ethics-canvas-2021/) | [specific/data](specific/data/README.md) | 2026-11-22 |
 | 7 | [Orthodox Presbyterian Church, Westminster Confession of Faith](https://www.opc.org/wcf.html) | [traditions/christianity](traditions/christianity.md) | 2026-11-22 |
 | 7 | [Oxford University Press, Moral Uncertainty (MacAskill, Bykvist and Ord, 2020)](https://academic.oup.com/book/31934) | [general/reasoning](general/reasoning.md) | 2026-11-22 |
+| 7 | [Parliament of the World's Religions, Towards a Global Ethic: An Initial Declaration](https://www.weltethos.org/wp-content/uploads/2023/08/Global-Ethic-Declaration_EN.pdf) | [general/animals](general/animals.md), [general/environment](general/environment.md), [general/fairness](general/fairness.md), [general/harm-and-care](general/harm-and-care.md), [general/human-rights](general/human-rights.md), [general/moral-theories](general/moral-theories.md), [general/relationships](general/relationships.md), [traditions](traditions/README.md) | 2026-11-22 |
 | 7 | [Plum Village, The Five Mindfulness Trainings](https://plumvillage.org/mindfulness/the-5-mindfulness-trainings) | [traditions/buddhism](traditions/buddhism.md) | 2026-11-22 |
 | 7 | [Plum Village, The Fourteen Mindfulness Trainings](https://plumvillage.org/mindfulness/the-14-mindfulness-trainings) | [traditions/buddhism](traditions/buddhism.md) | 2026-11-22 |
 | 7 | [Quran.com, Qur'an 107:1–3 (Abdel Haleem)](https://quran.com/al-maun/1-3?translations=85) | [traditions/islam](traditions/islam.md) | 2026-11-22 |
@@ -543,7 +546,6 @@ This file is generated from [sources.csv](sources.csv) by `python3 scripts/rank.
 | 7 | [Sefaria, Leviticus 19:16](https://www.sefaria.org/Leviticus.19.16) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 7 | [Sefaria, Leviticus 19:18](https://www.sefaria.org/Leviticus.19.18) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 7 | [Sefaria, Leviticus 19:33–34](https://www.sefaria.org/Leviticus.19.33-34) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
-| 7 | [Sefaria, Leviticus 19:35-36](https://www.sefaria.org/Leviticus.19.35-36) | [general/fairness](general/fairness.md), [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 7 | [Sefaria, Makkot 23b](https://www.sefaria.org/Makkot.23b.18) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 7 | [Sefaria, Mishnah Gittin 4:2](https://www.sefaria.org/Mishnah_Gittin.4.2) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 7 | [Sefaria, Mishnah Sanhedrin 4:5](https://www.sefaria.org/Mishnah_Sanhedrin.4.5) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
@@ -555,7 +557,6 @@ This file is generated from [sources.csv](sources.csv) by `python3 scripts/rank.
 | 7 | [Sefaria, Pirkei Avot 1:18](https://www.sefaria.org/Pirkei_Avot.1.18) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 7 | [Sefaria, Pirkei Avot 1:2](https://www.sefaria.org/Pirkei_Avot.1.2) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 7 | [Sefaria, Sanhedrin 74a](https://www.sefaria.org/Sanhedrin.74a.12) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
-| 7 | [Sefaria, Shabbat 31a:6](https://www.sefaria.org/Shabbat.31a.6) | [general/harm-and-care](general/harm-and-care.md), [traditions](traditions/README.md), [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 7 | [Sefaria, Yoma 85b](https://www.sefaria.org/Yoma.85b) | [traditions/judaism](traditions/judaism.md) | 2026-11-22 |
 | 7 | [Sikh Research Journal, Nirvikar Singh, The Three Pillars of Sikhism: A Note on Origins](https://sikhresearchjournal.org/index.php/srj/article/view/114) | [traditions/sikhism](traditions/sikhism.md) | 2026-11-22 |
 | 7 | [SriGranth, Guru Granth Sahib, Ang 1245](https://www.srigranth.org/servlet/gurbani.gurbani?Action=Page&Param=1245) | [traditions/sikhism](traditions/sikhism.md) | 2026-11-22 |
@@ -624,7 +625,7 @@ This file is generated from [sources.csv](sources.csv) by `python3 scripts/rank.
 | 7 | [Stanford Encyclopedia of Philosophy, Integrity: Integrity as a Virtue](https://plato.stanford.edu/entries/integrity/#InteVirt) | [general/character](general/character.md) | 2026-11-22 |
 | 7 | [Stanford Encyclopedia of Philosophy, Integrity: Integrity as Standing for Something](https://plato.stanford.edu/entries/integrity/#InteStanForSome) | [general/character](general/character.md) | 2026-11-22 |
 | 7 | [Stanford Encyclopedia of Philosophy, Intellectual Property: Justifications and Critiques](https://plato.stanford.edu/entries/intellectual-property/#JustCrit) | [specific/software](specific/software/README.md) | 2026-11-22 |
-| 7 | [Stanford Encyclopedia of Philosophy, Kant's Moral Philosophy: The Formula of the Universal Law of Nature](https://plato.stanford.edu/entries/kant-moral/#ForUniLawNat) | [general/moral-theories](general/moral-theories.md) | 2026-11-22 |
+| 7 | [Stanford Encyclopedia of Philosophy, Kant's Moral Philosophy: The Formula of the Universal Law of Nature](https://plato.stanford.edu/entries/kant-moral/#ForUniLawNat) | [general/honesty](general/honesty.md), [general/moral-theories](general/moral-theories.md) | 2026-11-22 |
 | 7 | [Stanford Encyclopedia of Philosophy, Laozi: Dao and Virtue](https://plato.stanford.edu/entries/laozi/#DaoVir) | [traditions/daoism](traditions/daoism.md) | 2026-11-22 |
 | 7 | [Stanford Encyclopedia of Philosophy, Laozi: Naturalness and Nonaction](https://plato.stanford.edu/entries/laozi/#NatNon) | [traditions/daoism](traditions/daoism.md) | 2026-11-22 |
 | 7 | [Stanford Encyclopedia of Philosophy, Loyalty: Limiting Loyalty](https://plato.stanford.edu/entries/loyalty/#LimiLoya) | [general/relationships](general/relationships.md) | 2026-11-22 |
@@ -643,6 +644,7 @@ This file is generated from [sources.csv](sources.csv) by `python3 scripts/rank.
 | 7 | [Stanford Encyclopedia of Philosophy, Self-Deception](https://plato.stanford.edu/entries/self-deception/) | [general/honesty](general/honesty.md) | 2026-11-22 |
 | 7 | [Stanford Encyclopedia of Philosophy, Special Obligations: Filial Duty](https://plato.stanford.edu/entries/special-obligations/#FiliDuty) | [general/relationships](general/relationships.md) | 2026-11-22 |
 | 7 | [Stanford Encyclopedia of Philosophy, The Definition of Lying and Deception: Traditional Definition of Deception](https://plato.stanford.edu/entries/lying-definition/#TraDefDec) | [general/honesty](general/honesty.md) | 2026-11-22 |
+| 7 | [Stanford Encyclopedia of Philosophy, The Ethics and Rationality of Voting: The Moral Obligation to Vote](https://plato.stanford.edu/entries/voting/#MoraObliVote) | [general/relationships](general/relationships.md) | 2026-11-22 |
 | 7 | [Stanford Encyclopedia of Philosophy, The Moral Status of Animals: How to Count Animals' Moral Claims](https://plato.stanford.edu/entries/moral-animal/#HowCouAniMorCla) | [general/animals](general/animals.md) | 2026-11-22 |
 | 7 | [Stanford Encyclopedia of Philosophy, The Moral Status of Animals: Sentience](https://plato.stanford.edu/entries/moral-animal/#Sen) | [general/animals](general/animals.md) | 2026-11-22 |
 | 7 | [Stanford Encyclopedia of Philosophy, The Rule of Law: Procedural Aspects](https://plato.stanford.edu/entries/rule-of-law/#ProAsp) | [general/fairness](general/fairness.md) | 2026-11-22 |
@@ -774,6 +776,7 @@ This file is generated from [sources.csv](sources.csv) by `python3 scripts/rank.
 | 6 | [ENISA, Good Practice Guide on Vulnerability Disclosure](https://www.enisa.europa.eu/sites/default/files/publications/Good%20practice%20guide%20on%20vulnerability%20disclosure.pdf) | [specific/security](specific/security/README.md) | 2026-11-22 |
 | 6 | [EQUATOR Network, Reporting guidelines](https://equator-network.org/) | [specific/research](specific/research/README.md) | 2026-11-22 |
 | 6 | [Ethical Trading Initiative, Ethical Trade Norway, Fair Wear and PST, Common Framework for Responsible Purchasing Practices](https://www.cfrpp.org/s/CFRPP-full-Framework.pdf) | [specific/business](specific/business/README.md) | 2026-11-22 |
+| 6 | [Ethics (Oxford University Research Archive), Fabre, The Morality of Gossip: A Kantian Account](https://ora.ox.ac.uk/objects/uuid:d4cfcf17-1414-422f-bc09-46c310e0d59f/files/sw6634524c) | [general/respect-and-consent](general/respect-and-consent.md) | 2026-11-22 |
 | 6 | [Ethics Unwrapped (University of Texas at Austin)](https://ethicsunwrapped.utexas.edu/) | [general/honesty](general/honesty.md), [general/reading-list](general/reading-list.md) | 2026-11-22 |
 | 6 | [Ethics Unwrapped, Altruism](https://ethicsunwrapped.utexas.edu/glossary/altruism) | [general/harm-and-care](general/harm-and-care.md) | 2026-11-22 |
 | 6 | [Ethics Unwrapped, Applied Ethics](https://ethicsunwrapped.utexas.edu/glossary/applied-ethics) | [general](general/README.md) | 2026-11-22 |
