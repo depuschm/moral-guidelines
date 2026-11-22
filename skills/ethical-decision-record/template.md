@@ -25,7 +25,7 @@ review-date: YYYY-MM-DD
 
 ## Rules that apply
 
-* `<ID>` (<score>) <rule title> ([source](https://…)): <how it bears on the decision>
+* `<ID>` (<score>) <rule title> ([source](https://example.com/source)): <how it bears on the decision>
 * Open question: <question, if the decision touches one, with the positions>
 
 ## Options

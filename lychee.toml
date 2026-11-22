@@ -36,6 +36,11 @@ exclude = [
   '^https://www\.ftc\.gov/',
   # Loads normally, but times out for scripted requests (checked 2026-11-22).
   '^https://www\.canada\.ca/',
+  # Answer GitHub-hosted runners with 403 or time out, though they load from elsewhere and in a
+  # browser (checked 2026-11-22). The source re-check (.claude/skills/reverify-sources) covers them.
+  '^https://ora\.ox\.ac\.uk/',
+  '^https://www\.unwomen\.org/',
+  '^https://datascience\.codata\.org/',
   # Forbids automated access by its terms; cite another edition instead (see CONTRIBUTING.md).
   '^https://ctext\.org/',
   # This repository's own website. It's deployed after this check runs, and the strict
