@@ -1,0 +1,33 @@
+{
+  "name": "moral-guidelines",
+  "displayName": "Moral Guidelines",
+  "description": "Source-linked moral guidelines: morality and ethics for everyone, applied ethics for technology, AI, games, business, research, healthcare, journalism and public service, and what the major religious and philosophical traditions teach. With skills for asking the guidelines, ethics reviews of products and plans, ethical decision records, consequence scanning and adopting ethical practices in a team.",
+  "author": {
+    "name": "depuschm",
+    "url": "https://github.com/depuschm"
+  },
+  "repository": "https://github.com/depuschm/moral-guidelines",
+  "homepage": "https://depuschm.github.io/moral-guidelines/",
+  "license": "CC-BY-4.0 AND MIT",
+  "keywords": [
+    "ethics",
+    "morality",
+    "values",
+    "moral-philosophy",
+    "applied-ethics",
+    "ethics-review",
+    "decision-making",
+    "consequence-scanning",
+    "human-rights",
+    "ai-ethics",
+    "data-ethics",
+    "dark-patterns",
+    "game-ethics",
+    "business-ethics",
+    "research-ethics",
+    "medical-ethics",
+    "journalism-ethics",
+    "religion",
+    "guidelines"
+  ]
+}

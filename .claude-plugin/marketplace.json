@@ -1,0 +1,14 @@
+{
+  "name": "moral-guidelines",
+  "description": "Moral guidelines and the skills that apply them.",
+  "owner": {
+    "name": "depuschm"
+  },
+  "plugins": [
+    {
+      "name": "moral-guidelines",
+      "source": ".",
+      "description": "Source-linked moral guidelines with skills for ethics reviews, ethical decision records, consequence scanning and adopting ethical practices."
+    }
+  ]
+}

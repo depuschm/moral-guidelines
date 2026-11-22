@@ -1,0 +1,120 @@
+name: Checks
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "17 6 * * 1" # weekly link-rot check, Mondays 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  citations:
+    name: Every rule has a source and a score
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: python3 scripts/check_citations.py
+      - run: python3 scripts/rank.py check
+
+  links:
+    name: Links resolve
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # Results stay cached for two days (lychee.toml), so most runs only check new links.
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .lycheecache
+          key: lychee-${{ github.sha }}
+          restore-keys: lychee-
+      - uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: --config lychee.toml --no-progress './**/*.md'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  sources:
+    name: Sources are alive and fresh
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Detect broken and retired sources
+        run: python3 scripts/verify_sources.py
+      - name: Report sources not verified in the last year
+        if: always()
+        run: |
+          {
+            echo '## Sources not verified in the last 365 days'
+            echo '```'
+            python3 scripts/verify_sources.py --stale
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  stale:
+    name: No source left unverified for a year
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: python3 scripts/verify_sources.py --stale --strict
+
+  report:
+    name: Open an issue when the weekly check fails
+    needs: [links, sources, stale]
+    if: failure() && github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          title="Weekly source check failed"
+          existing=$(gh issue list -R "$GITHUB_REPOSITORY" --label freshness --state open --search "\"$title\" in:title" --json number -q '.[0].number')
+          body="The scheduled check found broken, retired or stale sources: $RUN_URL
+
+          Fix them with the reverify-sources skill, or see CONTRIBUTING.md (Scores, IDs and freshness)."
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" -R "$GITHUB_REPOSITORY" --body "Failed again: $RUN_URL"
+          else
+            gh issue create -R "$GITHUB_REPOSITORY" --title "$title" --label freshness --body "$body"
+          fi
+
+  workflows:
+    name: Workflows pass a security audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # zizmor audits the workflows for unpinned actions, excessive permissions, credential
+      # persistence and template injection, as in the architecture guidelines' GitHub Actions rules.
+      - uses: zizmorcore/zizmor-action@53290badfa369cb0bf7ad16342cb62c2fa47ac7b # v0.8.0
+        with:
+          advanced-security: false
+
+  plugin:
+    name: Plugin manifests are valid
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+      - run: npm install -g @anthropic-ai/claude-code # zizmor: ignore[adhoc-packages] the CLI is the tool under test, always latest
+      - run: claude plugin validate .

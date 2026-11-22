@@ -1,0 +1,29 @@
+name: Request a new domain or tradition
+description: Ask for guidelines for a profession, field or area of life, or a page for a religious or philosophical tradition, that isn't covered yet.
+labels: [domain]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What to add
+      options:
+        - A domain (profession, field or area of life)
+        - A religious or philosophical tradition
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: Law, architecture and construction, Shinto, Stoicism, …
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Codes, instruments or texts you know of
+      description: For a domain, the field's code of ethics or international instruments, which we'd adopt as the baseline. For a tradition, its main texts in reliable editions, and scholarly overviews.
+  - type: textarea
+    id: needs
+    attributes:
+      label: What you need guidance on

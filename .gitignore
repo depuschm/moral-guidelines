@@ -1,0 +1,7 @@
+.lycheecache
+.lychee-cookies.json
+__pycache__/
+.DS_Store
+evals/results/
+build/
+site/
