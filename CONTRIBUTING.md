@@ -113,6 +113,7 @@ Write about every tradition in the same neutral voice:
 - A rule keeps its ID when it's reworded, re-scored or re-sorted.
 - When a rule is removed, its ID is retired in [rules.csv](rules.csv) and never reused. To move a rule to another file, remove it and add it as a new rule there.
 - [RULES.md](RULES.md) lists every rule by ID.
+- Every rule ID that a guideline file names, for example in a "How to apply" entry or a tradition page's "Related rules" column, must be an active rule. `rank.py check` fails on IDs that don't exist or were retired.
 
 **Freshness.** Each source has a `verified` date in `sources.csv`, the last time someone confirmed the page still says what the guidelines cite it for.
 
