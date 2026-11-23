@@ -5,8 +5,9 @@ Every reference entry and every key rule in general/, specific/ and traditions/ 
 its score in backticks. Key rules also carry a stable ID after the score, for
 example "- `9` `HON-3` **Rule.** ...". Reference entries take their score from
 sources.csv (the score of their first link). Lists are sorted by score, highest
-first. Rule IDs are registered in rules.csv and never reused. SOURCES.md and
-RULES.md are generated. The scoring criteria are in RANKING.md.
+first. Rule IDs are registered in rules.csv and never reused, and every rule ID that a
+guideline file names must be an active rule. SOURCES.md and RULES.md are generated.
+The scoring criteria are in RANKING.md.
 
 Usage:
   python3 scripts/rank.py check   Verify scores, IDs, sort order and generated files (used by CI).
@@ -545,6 +546,25 @@ def sync_sources(sources, used, ctx):
     return updated
 
 
+def check_id_mentions(ctx, active, registry):
+    """Every rule ID that a guideline file names, for example in a tradition page's "Related rules"
+    column, a "How to apply" entry or the text of another rule, must be an active rule."""
+    for path in guideline_files():
+        relative = path.relative_to(ROOT).as_posix()
+        in_fence = False
+        for number, line in enumerate(path.read_text(encoding="utf-8").split("\n"), start=1):
+            if FENCE.match(line):
+                in_fence = not in_fence
+                continue
+            if in_fence:
+                continue
+            for rule_id in ID_MENTION.findall(line):
+                if rule_id in active:
+                    continue
+                state = "was retired" if registry.get(rule_id, {}).get("status") == "retired" else "doesn't exist"
+                ctx.problems.append(f"{relative}:{number}: names rule `{rule_id}`, which {state} (see RULES.md)")
+
+
 def run(fix):
     used = collect_links()
     ctx = Context(load_sources(), load_rules(), fix)
@@ -561,9 +581,7 @@ def run(fix):
 
     registry = sync_rules(ctx)
     active = {rule_id for rule_id, _, _, _ in ctx.rule_records}
-    for rule_id, _, where in ctx.practices:
-        if rule_id not in active:
-            ctx.problems.append(f"{where}: supports `{rule_id}`, which is not an active rule ID")
+    check_id_mentions(ctx, active, registry)
     expected = {
         SOURCES_CSV: render_sources_csv(ctx.sources),
         SOURCES_MD: render_sources_md(ctx.sources, used),

@@ -34,4 +34,4 @@ Chosen option: "Per-file prefix plus a number", because it's short and stable, a
 
 ### Confirmation
 
-`scripts/rank.py check` fails CI on missing, duplicate, wrong-prefix or reused IDs, and on "How to apply" entries that name an ID that doesn't exist.
+`scripts/rank.py check` fails CI on missing, duplicate, wrong-prefix or reused IDs, and on any guideline file that names an ID that doesn't exist or was retired, for example in a "How to apply" entry or a tradition page's "Related rules" column.
